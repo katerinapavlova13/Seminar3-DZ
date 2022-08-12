@@ -4,3 +4,8 @@
 //14212 -> нет
 //12821 -> да
 //23432 -> да
+
+Console.Write("Введите пятизначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if ()
