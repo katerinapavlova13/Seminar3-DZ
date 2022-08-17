@@ -7,6 +7,11 @@
 
 Console.WriteLine("Введите пятизначное число:");
 int num1 = Convert.ToInt32(Console.ReadLine());
+if( num1 > 99999 || num1 <= 9999)
+{
+    Console.Write("Введено не пятизначное число!");
+    return;
+}
    
     int a1 = num1 % 10;
     int a2 = num1 / 10 % 10;
