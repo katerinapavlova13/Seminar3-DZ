@@ -4,20 +4,18 @@
 //14212 -> нет
 //12821 -> да
 //23432 -> да
+
 Console.WriteLine("Введите пятизначное число:");
-string N = Console.ReadLine();
-int flipN = 0;
-for (int i = 0; i < N.Length / 2; i++)
-{ 
-    if (N.Substring(i, 1) != (N.Substring(N.Length - 1 - i, 1)))
-    {
-        Console.WriteLine("Число не является палиндромом");
-        return;
-    }
-    else
-        flipN = 1;
-}
-if (flipN == 1) 
-{
-    Console.WriteLine("Число является палиндромом");
-}
+int num1 = Convert.ToInt32(Console.ReadLine());
+   
+    int a1 = num1 % 10;
+    int a2 = num1 / 10 % 10;
+    int a3 = num1 / 100 % 10;
+    int a4 = num1 / 1000 % 10;
+    int a5 = num1 / 10000 % 10;
+    int num2 = a1 * 10000 + a2 * 1000 + a3 * 100 + a4 * 10 + a5;
+
+if (num1 == num2) Console.WriteLine("Число является палиндром!");
+else Console.Write("Число не является палиндромом!");
+
+
