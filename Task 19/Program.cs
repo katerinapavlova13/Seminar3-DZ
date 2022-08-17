@@ -15,7 +15,12 @@ int num1 = Convert.ToInt32(Console.ReadLine());
     int a5 = num1 / 10000 % 10;
     int num2 = a1 * 10000 + a2 * 1000 + a3 * 100 + a4 * 10 + a5;
 
-if (num1 == num2) Console.WriteLine("Число является палиндром!");
-else Console.Write("Число не является палиндромом!");
-
+if (num1 == num2) 
+{
+    Console.WriteLine("Число является палиндром!");
+}
+else
+{ 
+    Console.Write("Число не является палиндромом!");
+}
 
